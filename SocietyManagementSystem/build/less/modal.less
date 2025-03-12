@@ -1,0 +1,82 @@
+/*
+ * Component: modal
+ * ----------------
+ */
+.modal {
+  background: rgba(0,0,0,.3);
+}
+.modal-content {
+  .border-radius(0);
+  .box-shadow(0 2px 3px rgba(0,0,0,.125))!important;
+  border: 0;
+  @media (min-width: @screen-sm-min) {
+    .box-shadow(0 2px 3px rgba(0,0,0,.125))!important;
+  }
+}
+.modal-header {
+  border-bottom-color: @box-border-color;
+}
+.modal-footer {
+  border-top-color: @box-border-color;
+}
+
+//Modal variants
+.modal-primary {
+    .modal-body {
+        background-color: #3c8dbc; /* Light Blue */
+    }
+
+    .modal-header,
+    .modal-footer {
+        background-color: #367fa9; /* Darker Blue */
+        border-color: #2c6b94;
+    }
+}
+
+.modal-warning {
+    .modal-body {
+        background-color: #f39c12; /* Yellow */
+    }
+
+    .modal-header,
+    .modal-footer {
+        background-color: #e08e0b;
+        border-color: #c87f0a;
+    }
+}
+
+.modal-info {
+    .modal-body {
+        background-color: #00c0ef; /* Aqua */
+    }
+
+    .modal-header,
+    .modal-footer {
+        background-color: #00acd6;
+        border-color: #0097bd;
+    }
+}
+
+.modal-success {
+    .modal-body {
+        background-color: #00a65a; /* Green */
+    }
+
+    .modal-header,
+    .modal-footer {
+        background-color: #008d4c;
+        border-color: #007c43;
+    }
+}
+
+.modal-danger {
+    .modal-body {
+        background-color: #dd4b39; /* Red */
+    }
+
+    .modal-header,
+    .modal-footer {
+        background-color: #d73925;
+        border-color: #c23321;
+    }
+}
